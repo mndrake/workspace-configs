@@ -10,6 +10,7 @@ mkdir -p "${CONF_DIR}"
 cat <<EOF >>"${CONF_FILE}"
 c = get_config()
 c.NotebookApp.tornado_settings = {'headers': {'Content-Security-Policy': 'frame-ancestors *'}}
+c.NotebookApp.token = ''
 EOF
 
 # need to start jupyterlab in desired working directory
