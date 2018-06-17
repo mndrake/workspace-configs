@@ -1,4 +1,4 @@
 #!/bin/bash
-set -o nounset -o errexit -o pipefail
+set -o nounset -o errexit
 
 pip install --upgrade six && pip install jupyterlab==0.32.1 && pip install --upgrade jupyter
